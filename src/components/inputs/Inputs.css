@@ -1,0 +1,44 @@
+/* Input Type text */
+label{
+    
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: left;
+    font-weight: bolder;
+    color: white;
+}
+label input{
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid #89B8FF;
+    outline: none;
+}
+
+/*  Input type Radio */
+
+.inputRadio{
+    color: white;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+.inputRadio label{
+    width: 30px;
+}
+
+.inputRadio div{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Desplegables */
+
+select{
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid #89B8FF;
+    outline: none;
+
+}
