@@ -38,9 +38,6 @@
 }
 
 
-
-
-
 /* Succes Animations */
 
 
@@ -78,4 +75,16 @@
         height: 300px;
         opacity: 1;
     }
+}
+
+/* Inputs */
+
+.inputs{
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: left;
+    font-size: 16px;
 }

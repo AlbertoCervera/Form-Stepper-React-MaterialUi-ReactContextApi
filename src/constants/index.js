@@ -3,3 +3,4 @@ export const NACIONALIDADES = ["Afganistán","Albania","Alemania","Andorra","Ang
 
 
 export const SEXO = ["Masculino","Femenino", "Otros"]
+export const NIVELES_ESTUDIO = ["Primaria","Secundaria", "Bachillerato","Formación Profesional Básica","Formación Profesional Grado Medio", "formació Profesional Grado Superior","Educación Superior"]

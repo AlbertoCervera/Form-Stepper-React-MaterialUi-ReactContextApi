@@ -7,7 +7,7 @@ import Options from "./inputs/Options";
 
 
 // CONSTANTES
-import { NACIONALIDADES,SEXO } from "../constants";
+import { NACIONALIDADES,SEXO,NIVELES_ESTUDIO } from "../constants";
 
 export default function InformacionPersonal() {
 
@@ -25,6 +25,10 @@ export default function InformacionPersonal() {
 
                 <Options pregunta="Nacionalidad" respuestas={NACIONALIDADES}/>
                 <Options pregunta="Sexo" respuestas={SEXO}/>
+                <InputRadio pregunta="¿Forma parte del órgano de representación de la plantilla?"     width="380px" name="sexo"/>
+                <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO}/>
+                <InputText label="Responsabilidades Familiares" name="responsabilidades"/>
+
             </div>
         </div>
     )
