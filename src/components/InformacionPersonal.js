@@ -30,6 +30,7 @@ export default function InformacionPersonal() {
                 <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO}/>
                 <InputText label="Responsabilidades Familiares" name="responsabilidades"/>
                 <InputHijos/>
+                <Options pregunta="Nivel de Estudios que da acceso al puesto" respuestas={NIVELES_ESTUDIO}/>
             </div>
         </div>
     )
