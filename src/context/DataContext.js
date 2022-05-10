@@ -7,10 +7,11 @@ export const DataProvider = ({children}) => {
 
     const [step,setStep] = useState(0)
 
+    const [numHijos,setNumHijos] = useState(3)
 
 
     return(
-        <DataContext.Provider value={{steps:[step,setStep]}}>
+        <DataContext.Provider value={{steps:[step,setStep],hijos:[numHijos,setNumHijos]}}>
             {children}
         </DataContext.Provider>
     )

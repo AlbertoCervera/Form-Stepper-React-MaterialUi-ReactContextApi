@@ -84,7 +84,47 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
-    justify-content: left;
+    gap: 40px;
     font-size: 16px;
+    
+}
+
+
+
+.InputHijos{
+    display: flex;
+    width: 74% ;
+    gap: 10px;
+    
+    
+}
+
+.InputHijos input{
+    width:50px ;
+}
+.InputHijos label{
+    width: 120px;
+}
+
+
+
+@media only screen and (min-width:2100px) {
+    .inputs{
+        padding-top: 25px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        font-size: 19px;
+    }
+
+    .InputHijos{
+        width: 75% ;
+    }
+    .InputHijos label{
+        width: 140px;
+    }
+    
+    
+    
 }

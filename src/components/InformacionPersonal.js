@@ -8,6 +8,7 @@ import Options from "./inputs/Options";
 
 // CONSTANTES
 import { NACIONALIDADES,SEXO,NIVELES_ESTUDIO } from "../constants";
+import InputHijos from "./inputs/InputHijos";
 
 export default function InformacionPersonal() {
 
@@ -19,16 +20,16 @@ export default function InformacionPersonal() {
 
             <div className="inputs">
                 <InputText label="Nombre" name="nombre"/>
-                
-                <InputDate label="Fecha de Nacimiento"/>
-                <InputRadio pregunta="¿Es una persona con discapacidad?"     width="220px" name="sexo"/>
-
                 <Options pregunta="Nacionalidad" respuestas={NACIONALIDADES}/>
                 <Options pregunta="Sexo" respuestas={SEXO}/>
+                
+                <InputDate label="Fecha de Nacimiento"/>
+                <InputRadio pregunta="¿Es una persona con discapacidad?"     width="230px" name="sexo"/>
+
                 <InputRadio pregunta="¿Forma parte del órgano de representación de la plantilla?"     width="380px" name="sexo"/>
                 <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO}/>
                 <InputText label="Responsabilidades Familiares" name="responsabilidades"/>
-
+                <InputHijos/>
             </div>
         </div>
     )

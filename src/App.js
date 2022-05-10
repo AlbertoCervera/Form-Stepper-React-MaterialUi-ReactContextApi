@@ -38,6 +38,8 @@ function Formularios (){
       return(
         <Finalizado/>
       )
+    default:
+      return(<InformacionPersonal/>)
   }
 }
 

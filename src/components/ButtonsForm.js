@@ -24,20 +24,29 @@ export default function ButtonsForms() {
       }
     }
     
-    if(step < 4){
-     
-        return(
-            <span className="buttons">      
-                <button onClick={handleClickVolver}><ArrowBackIcon/>Volver</button>
-                <button onClick={handleClickSiguiente}>{step == 3?"Guardar": "Siguiente"} <ArrowForwardIcon /></button>
-            </span>
-        )
+
+    
+    if(step === 0){
+      return(
+        <span className="buttons">      
+            <button onClick={handleClickSiguiente}>{step === 3?"Guardar": "Siguiente"} <ArrowForwardIcon /></button>
+        </span>
+      )
+    }else if(step < 4){
+
+      return(
+        <span className="buttons">      
+            <button onClick={handleClickVolver}><ArrowBackIcon/>Volver</button>
+            <button onClick={handleClickSiguiente}>{step === 3?"Guardar": "Siguiente"} <ArrowForwardIcon /></button>
+        </span>
+      )
     }else{
-        return(
-            <span className="buttons">      
-                <button onClick={()=>window.location="/"}>Volver a la Página</button>
-            </span>
+      return(
+        <span className="buttons">      
+            <button onClick={()=>window.location="/"}>Volver a la Página</button>
+        </span>
         )
     }
+
 
 }
