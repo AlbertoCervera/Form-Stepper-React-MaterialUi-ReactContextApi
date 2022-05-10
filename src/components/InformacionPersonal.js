@@ -24,9 +24,9 @@ export default function InformacionPersonal() {
                 <Options pregunta="Sexo" respuestas={SEXO}/>
                 
                 <InputDate label="Fecha de Nacimiento"/>
-                <InputRadio pregunta="¿Es una persona con discapacidad?"     width="230px" name="sexo"/>
+                <InputRadio pregunta="¿Es una persona con discapacidad?"     width="210px" name="sexo"/>
 
-                <InputRadio pregunta="¿Forma parte del órgano de representación de la plantilla?"     width="380px" name="sexo"/>
+                <InputRadio pregunta="¿Forma parte del órgano de representación de la plantilla?"     width="350px" name="sexo"/>
                 <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO}/>
                 <InputText label="Responsabilidades Familiares" name="responsabilidades"/>
                 <Options pregunta="Nivel de Estudios que da acceso al puesto" respuestas={NIVELES_ESTUDIO}/>
