@@ -16,7 +16,7 @@ import { useContext } from "react";
 
 export default function InformacionPersonal() {
     const {global}= useContext(DataContext)
-    const [setGlobalData] = global
+    const [globalData,setGlobalData] = global
 
     const handleInputChange = (event) => {
        
@@ -36,14 +36,14 @@ export default function InformacionPersonal() {
             </h1>
             <div className="inputs">
                 <InputText label="Nombre" name="nombre" onChange={handleInputChange}/>
-                <Options pregunta="Nacionalidad" respuestas={NACIONALIDADES}/>
-                <Options pregunta="Sexo" respuestas={SEXO}/>
-                <InputDate label="Fecha de Nacimiento"/>
-                <InputRadio pregunta="¿Es una persona con discapacidad?"     width="210px" name="sexo"/>
-                <InputRadio pregunta="¿Forma parte del órgano de representación de la plantilla?"     width="350px" name="sexo"/>
-                <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO}/>
+                <Options pregunta="Nacionalidad" respuestas={NACIONALIDADES} name="nacionalidad" onChange={handleInputChange}/>
+                <Options pregunta="Sexo" respuestas={SEXO} name="sexo" onChange={handleInputChange}/>
+                <InputDate label="Fecha de Nacimiento" name="fechaNacimiento" onChange={handleInputChange}/>
+                <InputRadio pregunta="¿Es una persona con discapacidad?" width="210px" name="discapacidad" onChange={handleInputChange}/>
+                <InputRadio pregunta="¿Forma parte del órgano de representación de la plantilla?" width="350px" name="organo" onChange={handleInputChange}/>
+                <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO} name="nivelEstudio" onChange={handleInputChange}/>
                 <InputText label="Responsabilidades Familiares" name="responsabilidades" onChange={handleInputChange}/>
-                <Options pregunta="Nivel de Estudios que da acceso al puesto" respuestas={NIVELES_ESTUDIO}/>
+                <Options pregunta="Nivel de Estudios que da acceso al puesto" respuestas={NIVELES_ESTUDIO} name="nivelAcceso" onChange={handleInputChange}/>
                 <InputHijos/>
             </div>
         </div>

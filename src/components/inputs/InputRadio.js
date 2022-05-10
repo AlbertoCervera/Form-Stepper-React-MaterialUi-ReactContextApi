@@ -9,11 +9,11 @@ export default function InputRadio(props){
             <div style={{width:props.width} } onChange={props.onChange}>
                 <label>
                     Si
-                    <input type="radio" name={name} value="true"/>
+                    <input name={name} type="radio" value="true"/>
                 </label>
                 <label>
                     No
-                    <input type="radio" name={name} value="false"/>
+                    <input name={name} type="radio" value="false"/>
                 </label>
             </div>
         </span>
