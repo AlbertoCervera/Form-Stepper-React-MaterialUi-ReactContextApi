@@ -44,7 +44,7 @@ export default function InformacionPersonal() {
                 <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO} name="nivelEstudio" onChange={handleInputChange}/>
                 <InputText label="Responsabilidades Familiares" name="responsabilidades" onChange={handleInputChange}/>
                 <Options pregunta="Nivel de Estudios que da acceso al puesto" respuestas={NIVELES_ESTUDIO} name="nivelAcceso" onChange={handleInputChange}/>
-                <InputHijos/>
+                <InputHijos onChange={handleInputChange}/>
             </div>
         </div>
     )
