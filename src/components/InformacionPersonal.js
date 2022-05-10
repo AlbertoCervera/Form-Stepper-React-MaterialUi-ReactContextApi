@@ -29,8 +29,8 @@ export default function InformacionPersonal() {
                 <InputRadio pregunta="¿Forma parte del órgano de representación de la plantilla?"     width="380px" name="sexo"/>
                 <Options pregunta="Nivel de Estudios" respuestas={NIVELES_ESTUDIO}/>
                 <InputText label="Responsabilidades Familiares" name="responsabilidades"/>
-                <InputHijos/>
                 <Options pregunta="Nivel de Estudios que da acceso al puesto" respuestas={NIVELES_ESTUDIO}/>
+                <InputHijos/>
             </div>
         </div>
     )

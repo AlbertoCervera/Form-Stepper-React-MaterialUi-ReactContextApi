@@ -10,7 +10,7 @@ function HijosGenerator(){
 
     let inputs=[]
     for (let index = 1; index-1 < numHijos; index++) {
-        inputs.push(<label> {"Hija/o "+index} <input type="number" name={"hijo" + index} min="1" max="70" /></label>)
+        inputs.push(<label> {"Edad Hija/o "+index} <input type="number" name={"hijo" + index} min="1" max="70" /></label>)
         
     }
     return(inputs)
