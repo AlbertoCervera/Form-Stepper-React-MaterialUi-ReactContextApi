@@ -6,7 +6,7 @@ export default function InputRadio(props){
     return(
         <span className="inputRadio">
             {props.pregunta}
-            <div style={{width:props.width}}>
+            <div style={{width:props.width} } onChange={props.onChange}>
                 <label>
                     Si
                     <input type="radio" name={name} value="true"/>
